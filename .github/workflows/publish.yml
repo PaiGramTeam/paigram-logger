@@ -1,9 +1,16 @@
-name: Python package
+name: Publish Python package
 
 on:
   push:
     tags:
-      - "v*.*.*"
+      - v*
+  release:
+    types: [ published ]
+  # Manual triggers with workflow_dispatch
+  workflow_dispatch:
+
+permissions:
+  contents: read
 
 jobs:
   build:
