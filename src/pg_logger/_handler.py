@@ -127,7 +127,7 @@ class Handler(DefaultRichHandler):
     def __init__(
         self,
         *args,
-        width: int = None,
+        width: Optional[int] = None,
         rich_tracebacks: bool = True,
         locals_max_depth: Optional[int] = None,
         tracebacks_max_frames: int = 100,

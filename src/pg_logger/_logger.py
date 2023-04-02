@@ -97,7 +97,7 @@ class Logger(logging.Logger):
             datefmt=self.config.time_format,
             handlers=[handler, debug_handler, error_handler],
         )
-        if config.capture_warnings:
+        if self.config.capture_warnings:
             logging.captureWarnings(True)
             warnings_logger = logging.getLogger("py.warnings")
             warnings_logger.addHandler(handler)

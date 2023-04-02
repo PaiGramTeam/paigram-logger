@@ -33,7 +33,7 @@ class LoggerConfig(BaseSettings):
 
     debug: bool = False
     """是否 debug"""
-    width: int = 180
+    width: Optional[int] = None
     """输出时的宽度"""
     keywords: List[str] = []
     """高亮的关键字"""
