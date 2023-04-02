@@ -17,6 +17,7 @@ classifiers = [
     "Programming Language :: Python :: Implementation :: CPython",
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
+homepage = "https://github.com/PaiGramTeam/paigram-logger"
 
 [tool.poetry.dependencies]
 python = "^3.8"
